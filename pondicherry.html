@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondicherry Travel Guide - Sahara Travel</title>
+    <link rel="stylesheet" href="pondicherry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="pondicherry-page">
+    <header class="pondicherry-header">
+        <nav>
+            <div class="logo">
+                <h1>Sahara Travel</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#tourist">Tourist Places</a></li>
+                <li><a href="#beaches">Beaches</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="pondicherry-hero">
+        <div class="hero-content">
+            <h1>Welcome to Pondicherry</h1>
+            <p>Experience the French Riviera of the East</p>
+            <div class="hero-buttons">
+                <a href="#about" class="explore-btn primary">Explore Now</a>
+                <a href="#tourist" class="explore-btn secondary">View Attractions</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="pondicherry-about">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>About Pondicherry</h2>
+                <p>A perfect blend of French colonial heritage and Tamil culture</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Rich Heritage</h3>
+                    <p>Experience the unique French colonial architecture and Tamil traditions</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <h3>Beautiful Beaches</h3>
+                    <p>Enjoy pristine beaches and water sports activities</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Spiritual Haven</h3>
+                    <p>Visit Auroville and find inner peace at Sri Aurobindo Ashram</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>French Cuisine</h3>
+                    <p>Savor authentic French and fusion Tamil cuisine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="weather" class="pondicherry-weather">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Weather Information</h2>
+                <p>Plan your visit with real-time weather updates</p>
+            </div>
+            <div class="weather-container">
+                <div class="weather-card current-weather">
+                    <div id="current-weather">
+                        <div class="weather-icon">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                        <div class="weather-info">
+                            <h3>Current Weather</h3>
+                            <p class="temperature">Loading...</p>
+                            <p class="description">Please wait...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-card forecast">
+                    <div id="forecast">
+                        <h3>3-Day Forecast</h3>
+                        <div class="forecast-container">
+                            Loading forecast...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tourist" class="pondicherry-attractions">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Tourist Attractions</h2>
+                <p>Discover the must-visit places in Pondicherry</p>
+            </div>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img src="https://source.unsplash.com/800x600/?auroville" alt="Auroville">
+                    <div class="card-content">
+                        <h3>Auroville</h3>
+                        <p>Universal township with the iconic Matrimandir</p>
+                        <div class="attraction-info">
+                            <span><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                            <span><i class="fas fa-ticket-alt"></i> Prior Booking Required</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 12 km from city</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://source.unsplash.com/800x600/?french-architecture" alt="French Quarter">
+                    <div class="card-content">
+                        <h3>French Quarter</h3>
+                        <p>Colonial architecture and tree-lined streets</p>
+                        <div class="attraction-info">
+                            <span><i class="fas fa-camera"></i> Photography Paradise</span>
+                            <span><i class="fas fa-utensils"></i> French Cafes</span>
+                            <span><i class="fas fa-walking"></i> Walking Tours Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://source.unsplash.com/800x600/?ashram" alt="Sri Aurobindo Ashram">
+                    <div class="card-content">
+                        <h3>Sri Aurobindo Ashram</h3>
+                        <p>Spiritual center and meditation hub</p>
+                        <div class="attraction-info">
+                            <span><i class="fas fa-clock"></i> 8:00 AM - 12:00 PM, 2:00 PM - 6:00 PM</span>
+                            <span><i class="fas fa-om"></i> Meditation Sessions</span>
+                            <span><i class="fas fa-book"></i> Library Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beaches" class="pondicherry-beaches">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Beautiful Beaches</h2>
+                <p>Explore the serene coastline of Pondicherry</p>
+            </div>
+            <div class="beaches-grid">
+                <div class="beach-card">
+                    <img src="https://source.unsplash.com/800x600/?promenade-beach" alt="Promenade Beach">
+                    <div class="card-content">
+                        <h3>Promenade Beach</h3>
+                        <p>Famous Rock Beach with Gandhi Statue</p>
+                        <div class="beach-info">
+                            <span><i class="fas fa-clock"></i> Best Time: Early Morning & Evening</span>
+                            <span><i class="fas fa-running"></i> Jogging Track</span>
+                            <span><i class="fas fa-monument"></i> Historic Monuments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="beach-card">
+                    <img src="https://source.unsplash.com/800x600/?paradise-beach" alt="Paradise Beach">
+                    <div class="card-content">
+                        <h3>Paradise Beach</h3>
+                        <p>Pristine beach with water sports</p>
+                        <div class="beach-info">
+                            <span><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                            <span><i class="fas fa-water"></i> Water Sports</span>
+                            <span><i class="fas fa-boat"></i> Boat Ride Required</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="beach-card">
+                    <img src="https://source.unsplash.com/800x600/?serenity-beach" alt="Serenity Beach">
+                    <div class="card-content">
+                        <h3>Serenity Beach</h3>
+                        <p>Surfing destination with fishing village</p>
+                        <div class="beach-info">
+                            <span><i class="fas fa-surfing"></i> Surfing Lessons</span>
+                            <span><i class="fas fa-sun"></i> Sunrise View</span>
+                            <span><i class="fas fa-fish"></i> Fresh Seafood</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="pondicherry-facilities">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Nearby Facilities</h2>
+                <p>Find essential services and amenities</p>
+            </div>
+            <div class="location-status">
+                <button id="getLocation" class="location-button">
+                    <i class="fas fa-map-marker-alt"></i> Find Facilities Near Me
+                </button>
+                <p id="locationStatus">Click the button to find nearby facilities</p>
+            </div>
+            <div class="facilities-grid">
+                <!-- Facilities will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="pondicherry-contact">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Contact Information</h2>
+                <p>Essential contacts for your visit</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card emergency">
+                    <h3><i class="fas fa-ambulance"></i> Emergency Contacts</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> Police: 100</li>
+                        <li><i class="fas fa-hospital"></i> Ambulance: 108</li>
+                        <li><i class="fas fa-fire-extinguisher"></i> Fire: 101</li>
+                        <li><i class="fas fa-info-circle"></i> Tourist Helpline: 1800-425-4082</li>
+                    </ul>
+                </div>
+                <div class="contact-card transport">
+                    <h3><i class="fas fa-bus"></i> Transportation</h3>
+                    <ul>
+                        <li><i class="fas fa-taxi"></i> Taxi Service: +91-413-2336600</li>
+                        <li><i class="fas fa-bus"></i> Bus Station: +91-413-2337402</li>
+                        <li><i class="fas fa-train"></i> Railway Station: +91-413-2334533</li>
+                    </ul>
+                </div>
+                <div class="contact-card tourist-office">
+                    <h3><i class="fas fa-info"></i> Tourist Office</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Tourism Department, Beach Road</li>
+                        <li><i class="fas fa-phone"></i> +91-413-2339497</li>
+                        <li><i class="fas fa-envelope"></i> tourism@pondicherry.gov.in</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pondicherry-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Sahara Travel</h3>
+                <p>Your trusted companion for exploring the most beautiful destinations in India.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#tourist">Tourist Places</a></li>
+                    <li><a href="#beaches">Beaches</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sahara Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Weather API Integration
+        $(document).ready(function() {
+            const API_KEY = 'YOUR_API_KEY'; // Replace with actual OpenWeatherMap API key
+            const CITY = 'Pondicherry';
+            
+            // Current Weather
+            $.get(https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric, function(data) {
+                $('#current-weather').html(`
+                    <div class="weather-icon">
+                        <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather icon">
+                    </div>
+                    <div class="weather-info">
+                        <h3>Current Weather</h3>
+                        <p class="temperature">${Math.round(data.main.temp)}°C</p>
+                        <p class="description">${data.weather[0].description}</p>
+                        <p class="humidity">Humidity: ${data.main.humidity}%</p>
+                    </div>
+                `);
+            });
+
+            // 3-Day Forecast
+            $.get(https://api.openweathermap.org/data/2.5/forecast?q=${CITY}&appid=${API_KEY}&units=metric, function(data) {
+                let forecastHtml = '<div class="forecast-days">';
+                for(let i = 0; i < data.list.length; i += 8) {
+                    const day = new Date(data.list[i].dt * 1000);
+                    forecastHtml += `
+                        <div class="forecast-day">
+                            <h4>${day.toLocaleDateString('en-US', {weekday: 'short'})}</h4>
+                            <img src="http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png" alt="Weather icon">
+                            <p class="forecast-temp">${Math.round(data.list[i].main.temp)}°C</p>
+                            <p class="forecast-desc">${data.list[i].weather[0].description}</p>
+                        </div>
+                    `;
+                }
+                forecastHtml += '</div>';
+                $('.forecast-container').html(forecastHtml);
+            });
+        });
+
+        // Nearby Facilities Feature
+        document.getElementById('getLocation').addEventListener('click', function() {
+            if (navigator.geolocation) {
+                document.getElementById('locationStatus').textContent = 'Getting your location...';
+                navigator.geolocation.getCurrentPosition(showNearbyFacilities, handleLocationError);
+            } else {
+                document.getElementById('locationStatus').textContent = 'Geolocation is not supported by your browser.';
+            }
+        });
+
+        function showNearbyFacilities(position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+            document.getElementById('locationStatus').textContent = 'Found your location! Loading nearby facilities...';
+            
+            const facilitiesHtml = `
+                <div class="facility-card">
+                    <h3><i class="fas fa-utensils"></i> Restaurants</h3>
+                    <ul>
+                        <li>Le Café (0.3 km)</li>
+                        <li>La Villa (0.5 km)</li>
+                        <li>Café des Arts (0.8 km)</li>
+                    </ul>
+                </div>
+                <div class="facility-card">
+                    <h3><i class="fas fa-shopping-bag"></i> Shopping</h3>
+                    <ul>
+                        <li>Mission Street Market (0.4 km)</li>
+                        <li>Goubert Market (0.6 km)</li>
+                        <li>Pondy Bazaar (1.2 km)</li>
+                    </ul>
+                </div>
+                <div class="facility-card">
+                    <h3><i class="fas fa-bicycle"></i> Rentals</h3>
+                    <ul>
+                        <li>Pondy Cycle Rental (0.3 km)</li>
+                        <li>Scooter Rental Hub (0.5 km)</li>
+                        <li>Beach Bike Rentals (0.7 km)</li>
+                    </ul>
+                </div>
+            `;
+            document.querySelector('.facilities-grid').innerHTML = facilitiesHtml;
+            document.getElementById('locationStatus').textContent = 'Nearby facilities loaded!';
+        }
+
+        function handleLocationError(error) {
+            let message = 'Error getting your location: ';
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    message += 'Permission denied';
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    message += 'Position unavailable';
+                    break;
+                case error.TIMEOUT:
+                    message += 'Timeout';
+                    break;
+                default:
+                    message += 'Unknown error';
+            }
+            document.getElementById('locationStatus').textContent = message;
+        }
+    </script>
+</body>
+</html>
